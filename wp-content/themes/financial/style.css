@@ -1,0 +1,416 @@
+/*
+Theme Name: Financial
+Theme URI: http://vergatheme.com/demosd/financial
+Author: Verga Theme Team
+Author URI: http://vergatheme.com
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: financial
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/***********************************************************************************
+ *  + [Table of contents]
+ *  +
+ *  + 1. Body
+ *  +   2. Header / header
+ *  +       2.1. Navigation / .top-menu
+ *  +       2.2. Mobile navigation / .mobile-menu
+ *  +   3. Slider / .slider
+ *  +       3.1. Slide / .slide
+ *  +       3.2. Control slider / .control-slider
+ *  +           3.2.1. Pagination slider / .dots-control
+ *  +           3.2.2. Prev/Next buttons / .prev-next
+ *  +   4. Under slider / .socialite
+ *  +   5. Features / .features
+ *  +   6. Video block pop-up / .video-popup
+ *  +   7. Services / .services
+ *  +   8. Screenshots / .screenshots
+ *  +   9. Price / .price-table
+ *  +   10. Testimonials / .testimonials
+ *  +   11. Your Benefits / .benefits
+ *  +   12. Frequently Asked Questions / .faq
+ *  +   13. What Did You Reciev / .what-did
+ *  +   14. Describe Your Best Feature / .describe
+ *  +   15. Download / .downloads
+ *  +       15.1. Prtners item / .parnters-item
+ *  +       15.2. Download buttons / .buttons-download
+ *  +   16. Contact informations / .contact-info
+ *  +   17. Contact form / .form-contact
+ *  +   18. Google map / .map
+ *  +   19. Fubscribe / .subscribe
+ *  +   20. Footer / footer
+ *  +       20.1. Social inons / .social-inons
+ *  +       20.2. Navigation / .footer-menu
+ *  +   21. Icon to top / .top
+ ***********************************************************************************/
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: #333 !important;
+}
+body {
+    font: 400 14px/25px "Raleway", sans-serif !important;
+    color: darkgray !important;
+}
+.widget_calendar {float: none;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { 
+    background: none repeat scroll 0 0 #E9E9E9;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center; 
+}
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th {
+    border: 1px solid #E9E9E9;
+    font-size: 13px;
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #E9E9E9; text-align: center; padding:8px;}
+#wp-calendar tbody td#today {background: #b49132; color: #fff;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot {border: 1px solid #E9E9E9;}
+#wp-calendar tfoot #next { font-size: 12px; text-transform: uppercase; text-align: right; color: #83c99f;}
+#wp-calendar tfoot #prev { font-size: 12px; text-transform: uppercase; padding-top: 10px; color: #83c99f;}
+
+.widget select {max-width: 100%;padding: 5px;border: 1px solid #ccc; width: 100%;}
+.widget_text .textwidget img{max-width: 100%;height: auto;}
+.widget_text select, .widget_text input , .widget_text textarea  {max-width: 100%;padding: 5px;border: 1px solid #ccc; width: 100%;}
+.widget_text option {max-width: 100%;}
+
+.widget_nav_menu ul li, .widget_pages ul li {color: #827b7d;line-height: 28px;}
+.widget_nav_menu ul li ul, .widget_pages ul li ul {padding-left: 20px;}
+.widget_nav_menu ul li a, .widget_pages ul li a, .sidebar-widget ul li a{color: #9d9d9d;}
+.widget_nav_menu ul li a:hover, .widget_pages ul li a:hover {color: #615C5C;}
+
+
+#sidebar .textwidget img {
+    max-width: 100%;
+}
+.wp-caption img  {
+    max-width:100%;
+}
+.wp-caption{
+    max-width:100%;
+}
+p.form-submit {
+    clear: both;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.form-submit input.submit  {
+    font: 700 16px/50px "Catamaran", sans-serif;
+    letter-spacing: 0.50px;
+    width: 210px;
+    display: inline-block;
+    background: #b49132;
+    color: #fff;
+    height: 50px;
+    padding: 0px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+        transition: all 300ms linear 0s;
+    border: 2px solid #b49132;
+    outline: none;
+    cursor: pointer;
+}
+.form-submit input.submit:hover {
+transform: rotateX(0deg) translateY(0%);
+    border: 2px solid #b49132;
+    background: none;
+    color: #373c5f;
+    transform-origin: center bottom;
+
+}
+
+body.logged-in .header-bottom.affix{
+  top:32px !important;
+}
+.screen-reader-text{}
+
+/* add */
+
+.alignright{
+    float:right;
+}
+.alignleft{
+    float:left;
+}
+img.alignleft , img.aligncenter , img.alignright {
+    width: auto !important;
+}
+
+.single-blog .blog-items table, .single-blog .comments table{ 
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+}
+.single-blog .blog-items table td, .single-blog .comments table td{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+} 
+.single-blog .blog-items table th, .single-blog .comments table th{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+ }
+.single-blog .blog-items  li, .single-blog .comments  li{
+  padding: 0!important;
+  list-style: inherit!important;
+ }
+.single-blog .blog-items  ul, .single-blog .comments  ul{
+  list-style: disc!important;
+  padding-left: 20px!important;
+ }
+.single-blog .blog-items  ol, .single-blog .comments  ol{
+  list-style: decimal!important;
+  padding-left: 20px!important;
+ }
+ img.alignleft, .alignleft img{
+  margin-right:10px; 
+ }
+ img.alignright, .alignright img{
+  margin-left:10px;
+ } 
+ .single-blog .blog-items  img {
+    max-width: 100% ;
+    height: auto;
+ }
+ 
+.wp-caption.aligncenter {
+    max-width: 100% !important;
+    text-align: center;
+    margin: 0px auto;
+}
+.comment-respond .comment-reply-title {
+    font: 400 24px/20px "Montserrat", sans-serif;
+    color: #000;
+    padding: 60px 0px 20px !important;
+}
+.comment-reply-link {
+    float: right;
+        color: darkgray !important;
+}
+.pagination .current {
+        color: #fff !important;
+    background-color: #b49132 !important;
+}
+.pagination>li>a, .pagination>li>span {
+        color: #848484 !important;
+}
+ 
+.custom-search .search-form {
+    width: 40% ;
+    margin-top: 40px;
+}
+.single-blog h2 a{
+    font: 400 42px/46px "Montserrat", sans-serif;
+    color: #373c5f;
+}
+body.page-template-template-blog .blog-items , body.archive .blog-items ,body.blog .blog-items ,body.search .blog-items{
+    padding-bottom: 60px;
+}
+.readmore {
+    color: #373c5f;
+    font-size: 16px;
+    font-weight: 500;
+}
+body.blog .single-blog .blog-items p {
+    padding-bottom: 10px;
+}
+.meta-info h5 a , .meta-info h4{
+    color: #373c5f;
+        font-weight: 700;
+}
+.latest-blog {
+    padding-bottom: 10px;
+}
+p.logged-in-as {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+p.logged-in-as a {
+     color: #373c5f;
+}
+.hover-img img {
+    border-radius: 50%;
+}
+.comments-title {
+        font: 400 24px/20px "Montserrat", sans-serif;
+    color: #000;
+    padding: 40px 0px 40px !important;
+}
+.meta-info p {
+    color: #464646;    
+}
+.comments ul.children {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.sidebar-right .screen-reader-text {
+    display: none;
+}
+.call-action-baner-area {
+        background-attachment: fixed !important; 
+        background-size: cover !important;
+}
+.latest-news-area .l-news-left .media-left img {
+    width: 165px;
+}
+h4.panel-title br , .planning-inner .list br , .result-info .list br , .result-info .list p,.result-info .media-body br{
+    display: none;
+}
+.email-signup-area {
+    background-color: gray !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;}
+.input-group-addon input[type="submit"] {
+    font: 400 16px/30px "Montserrat", sans-serif;
+    color: #fff;
+    border: 0px;
+    padding: 10px 43px;
+    text-transform: uppercase;
+    background: #b49132;
+}
+.request-contact .button:hover {
+transform: rotateX(0deg) translateY(0%);
+    border: 2px solid #b49132;
+    background: none;
+    color: #373c5f;
+    transform-origin: center bottom;
+}
+span.bs-caret {
+    padding-left: 30px;
+}
+.section-404 {
+    padding-top: 70px !important;
+    padding-bottom: 50px !important;
+}
+.wp-caption-text , .sticky, .gallery-caption, .bypostauthor {}
+.sidebar-right .widget_tag_cloud li {
+        padding-bottom: 10px;
+        display: inline-block;
+}
+.sidebar-right .widget_tag_cloud li a {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 0px 10px;
+        color: #9d9d9d;
+    border: 1px solid #e6e6e6;
+    line-height: 40px;
+}
+.recentcomments .comment-author-link a {
+    color: #373c5f;
+    font-weight: 700;
+}
+.single-blog .comments .row {
+    padding: 10px 0px;
+}
+.blog-items h2, .comments h2 {
+    font-size: 30px !important;
+        color: inherit !important;
+    border-bottom: none !important;
+}
+.blog-items h1,.blog-items h2,.blog-items h3,.blog-items h4,.blog-items h5,.blog-items h6, .comments h1,.comments h2,.comments h3,.comments h4,.comments h5,.comments h6 {
+    margin: 0px !important;
+    padding : 5px 0px !important;
+}
+span.featured-post {
+    font-size: 20px !important;
+    float: right;
+    padding-right: 20px;    
+}
+form.post-password-form input[type=submit] {
+    padding: 0px 5px;
+    background: #373c5f;
+    color: #fff;
+    border-color: #373c5f;
+}
+body.tag li a {
+    border: none;
+    padding: 0px;
+    line-height: 30px;
+}
+body.tag {
+    float: none;
+    padding-top: 0px;
+}
+.single-blog .blog-items .post-meta li:nth-child(2):before{
+    margin-right: 10px;
+}
+.single-blog .blog-items .post-meta li, .single-blog .blog-items .post-meta li i{
+        color: #464646;
+            font-weight: 500;
+}
+.blog-items h1{
+    color: #464646!important;
+        font-size: 40px;
+}
+.blog-items h2{
+    color: #464646!important;
+        font-size: 35px!important;
+}
+.blog-items h3{
+    color: #464646!important;
+        font-size: 31px;
+}
+.blog-items h4{
+    color: #464646!important;
+        font-size: 27px;
+}
+.blog-items h5{
+    color: #464646!important;
+        font-size: 23px;
+}
+.blog-items h6{
+    color: #464646!important;
+        font-size: 18px;
+}
+
+.comments .meta-info h1{
+    color: #464646!important;
+        font-size: 40px;
+}
+.comments .meta-info h2{
+    color: #464646!important;
+        font-size: 35px!important;
+}
+.comments .meta-info h3{
+    color: #464646!important;
+        font-size: 31px;
+}
+.comments .meta-info h4{
+    color: #464646!important;
+        font-size: 27px;
+}
+.comments .meta-info h5{
+    color: #464646!important;
+        font-size: 23px;
+}
+.comments .meta-info h6{
+    color: #464646!important;
+        font-size: 18px;
+}
+a{
+      color: #373c5f;
+}
